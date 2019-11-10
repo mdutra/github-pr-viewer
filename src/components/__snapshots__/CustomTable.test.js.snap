@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<ForwardRef(WithStyles)
+  columns={
+    Array [
+      Object {
+        "field": "title",
+      },
+    ]
+  }
+  options={
+    Object {
+      "header": false,
+      "search": false,
+    }
+  }
+  title="Open pull requests from user/repo"
+/>
+`;
