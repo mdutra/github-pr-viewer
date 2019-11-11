@@ -9,10 +9,20 @@ exports[`matches snapshot 1`] = `
       },
     ]
   }
+  localization={
+    Object {
+      "pagination": Object {
+        "labelDisplayedRows": "{from}--{to}",
+      },
+    }
+  }
   options={
     Object {
       "header": false,
+      "pageSize": 5,
+      "pageSizeOptions": Array [],
       "search": false,
+      "showFirstLastPageButtons": false,
     }
   }
   title="Open pull requests from user/repo"
