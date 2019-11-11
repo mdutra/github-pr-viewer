@@ -1,10 +1,11 @@
 ## GitHub Pull Request Viewer
 
-View open pull requests of any GitHub repository. Use the URL to choose the repository and view 10 pull requests for page.
+View open pull requests of any GitHub repository.
+Choose the repository in the URL and list 10 pull requests for page.
 
-Libraries:
+Main libraries:
 - react
-- material-ui + material-table
+- material-table
 - react-router
 - axios
 
@@ -13,7 +14,6 @@ Libraries:
 Install node.js and npm on your computer.
 
 Install dependencies and start the server:
-
 ```shell
 $ npm install
 $ npm start
