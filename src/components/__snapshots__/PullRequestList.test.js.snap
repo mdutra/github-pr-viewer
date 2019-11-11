@@ -1,0 +1,12 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`matches snapshot 1`] = `
+<CustomTable
+  data={Array []}
+  emptyDataSourceMessage="No records to display"
+  isLoading={true}
+  onChangePage={[Function]}
+  pageSize={10}
+  repo="test/test"
+/>
+`;
