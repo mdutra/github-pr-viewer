@@ -9,6 +9,7 @@ exports[`matches snapshot 1`] = `
       },
     ]
   }
+  isLoading={false}
   localization={
     Object {
       "pagination": Object {

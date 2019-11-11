@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import MaterialTable from 'material-table';
 
-function CustomTable({ repo, data, pageSize, onChangePage }) {
+function CustomTable({ repo, data, isLoading, pageSize, onChangePage }) {
   const fromRepo = repo ? ` from ${repo}` : '';
 
   return (
@@ -10,6 +10,7 @@ function CustomTable({ repo, data, pageSize, onChangePage }) {
       title={'Open pull requests' + fromRepo}
       columns={[{ field: 'title' }]}
       data={data}
+      isLoading={isLoading}
       options={{
         search: false,
         header: false,
@@ -32,12 +33,14 @@ CustomTable.propTypes = {
   data: PropTypes.arrayOf(
     PropTypes.shape({ title: PropTypes.string.isRequired }),
   ),
+  isLoading: PropTypes.bool,
   pageSize: PropTypes.number,
   onChangePage: PropTypes.func,
 };
 
 CustomTable.defaultProps = {
   repo: undefined,
+  isLoading: false,
   pageSize: 5,
   onChangePage: undefined,
 };
