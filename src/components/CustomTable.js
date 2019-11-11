@@ -2,7 +2,14 @@ import React from 'react';
 import PropTypes from 'prop-types';
 import MaterialTable from 'material-table';
 
-function CustomTable({ repo, data, isLoading, pageSize, onChangePage }) {
+function CustomTable({
+  repo,
+  data,
+  isLoading,
+  pageSize,
+  onChangePage,
+  emptyDataSourceMessage,
+}) {
   const fromRepo = repo ? ` from ${repo}` : '';
 
   return (
@@ -22,6 +29,7 @@ function CustomTable({ repo, data, isLoading, pageSize, onChangePage }) {
         pagination: {
           labelDisplayedRows: '{from}--{to}',
         },
+        body: { emptyDataSourceMessage },
       }}
       onChangePage={onChangePage}
     />
@@ -36,6 +44,7 @@ CustomTable.propTypes = {
   isLoading: PropTypes.bool,
   pageSize: PropTypes.number,
   onChangePage: PropTypes.func,
+  emptyDataSourceMessage: PropTypes.string,
 };
 
 CustomTable.defaultProps = {
@@ -43,6 +52,7 @@ CustomTable.defaultProps = {
   isLoading: false,
   pageSize: 5,
   onChangePage: undefined,
+  emptyDataSourceMessage: 'No records to display',
 };
 
 export default CustomTable;

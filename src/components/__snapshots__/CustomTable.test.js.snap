@@ -12,6 +12,9 @@ exports[`matches snapshot 1`] = `
   isLoading={false}
   localization={
     Object {
+      "body": Object {
+        "emptyDataSourceMessage": "No records to display",
+      },
       "pagination": Object {
         "labelDisplayedRows": "{from}--{to}",
       },
