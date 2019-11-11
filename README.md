@@ -1,7 +1,6 @@
 ## GitHub Pull Request Viewer
 
-View open pull requests of any GitHub repository.
-Choose the repository in the URL and list 10 pull requests for page.
+List open pull requests from any GitHub repository.
 
 Main libraries:
 - react
@@ -11,22 +10,23 @@ Main libraries:
 
 ### Environment setup
 
-Install node.js and npm on your computer.
-
-Install dependencies and start the server:
+- Install **node.js** and **npm** on your computer.
+- Install dependencies and start the server:
 ```shell
 $ npm install
 $ npm start
 ```
+- Open `https://localhost:3000`
 
-Some examples:
+### Examples
 
+Specify the repository in the URL, for example:
 ```
 https://localhost:3000/neovim/neovim
 https://localhost:3000/nestjs/nest
 ```
 
-### Running tests:
+### Running tests
 
 ```shell
 $ npm test
