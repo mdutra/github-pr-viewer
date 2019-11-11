@@ -16,14 +16,14 @@ Main libraries:
 $ npm install
 $ npm start
 ```
-- Open `https://localhost:3000`
+- Open in your browser: `localhost:3000`
 
 ### Examples
 
 Specify the repository in the URL, for example:
 ```
-https://localhost:3000/neovim/neovim
-https://localhost:3000/nestjs/nest
+localhost:3000/neovim/neovim
+localhost:3000/nestjs/nest
 ```
 
 ### Running tests
